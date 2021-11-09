@@ -4,6 +4,7 @@ jobs:
  My-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      -  uses: actions/checkout@v2
       - name: lint test
       - run: |
           make lint
