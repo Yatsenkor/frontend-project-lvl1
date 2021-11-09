@@ -1,0 +1,9 @@
+name: GitHub Actions
+on: [push]
+jobs:
+ My-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: lint test
+      - run: |
+          make lint
