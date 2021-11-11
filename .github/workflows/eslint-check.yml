@@ -1,19 +1,13 @@
-name: GitHub Actions
+name: Linter
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: push
 
 jobs:
-  # Set the job key. The key is displayed as the job name
-  # when a job name is not provided
-  make-lint:
-    # Name the Job
-    name: Runs linter
-    # Set the type of machine to run on
+  buld:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix: [14x]
 
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
