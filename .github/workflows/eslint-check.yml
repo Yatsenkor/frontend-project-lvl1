@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
-      matrix: [14x]
+      matrix: [14.x]
 
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
